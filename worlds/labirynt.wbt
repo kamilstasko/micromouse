@@ -1,0 +1,1190 @@
+#VRML_SIM R2020a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation 1 0 0 4.71238898038469
+  position 0.03409363881711393 2.7542273041653713 -0.004217375020543344
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 1.6 1.6
+  floorTileSize 0.2 0.2
+  wallThickness 0.006
+  wallHeight 1e-06
+  wallAppearance BrushedAluminium {
+    IBLStrength 60
+  }
+}
+E-puck {
+  translation -0.75 0 0.75
+  controller "micro-mouse"
+  turretSlot [
+    Compass {
+    }
+  ]
+  groundSensorsSlot [
+    GPS {
+    }
+  ]
+}
+DEF WALL_1 Solid {
+  translation -0.7 0.025 0.7
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.2
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_2 Solid {
+  translation -0.6 0.025 0.7
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.2
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_3 Solid {
+  translation -0.5 0.025 0.75
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.1
+      }
+    }
+  ]
+  name "solid(3)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_4 Solid {
+  translation -0.75 0.025 0.5
+  rotation 0 1 0 1.5708
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.1
+      }
+    }
+  ]
+  name "solid(4)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_5 Solid {
+  translation 0.147 0.025 0.7
+  rotation 0 1 0 1.5707996938995747
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 1.106
+      }
+    }
+  ]
+  name "solid(5)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_6 Solid {
+  translation -0.6 0.025 0.45
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.1
+      }
+    }
+  ]
+  name "solid(6)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_7 Solid {
+  translation -0.647 0.025 0.4
+  rotation 0 1 0 1.5708
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.106
+      }
+    }
+  ]
+  name "solid(7)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_8 Solid {
+  translation -0.5 0.025 0.45
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.3
+      }
+    }
+  ]
+  name "solid(8)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_9 Solid {
+  translation -0.597 0.025 0.3
+  rotation 0 1 0 1.5708
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.206
+      }
+    }
+  ]
+  name "solid(9)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_10 Solid {
+  translation -0.4 0.025 0.45
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.5
+      }
+    }
+  ]
+  name "solid(10)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_11 Solid {
+  translation -0.55 0.025 0.2
+  rotation 0 1 0 1.5708
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.312
+      }
+    }
+  ]
+  name "solid(11)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_12 Solid {
+  translation -0.7 0.025 0
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.4
+      }
+    }
+  ]
+  name "solid(12)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_13 Solid {
+  translation -0.55 0.025 -0.2
+  rotation 0 1 0 1.5708
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.312
+      }
+    }
+  ]
+  name "solid(13)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_14 Solid {
+  translation -0.4 0.025 -0.45
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.5
+      }
+    }
+  ]
+  name "solid(14)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_15 Solid {
+  translation 0.147 0.025 -0.7
+  rotation 0 1 0 1.5707996938995747
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 1.106
+      }
+    }
+  ]
+  name "solid(15)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_16 Solid {
+  translation -0.597 0.025 -0.3
+  rotation 0 1 0 1.5708
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.206
+      }
+    }
+  ]
+  name "solid(16)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_17 Solid {
+  translation -0.5 0.025 -0.45
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.3
+      }
+    }
+  ]
+  name "solid(17)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_18 Solid {
+  translation -0.647 0.025 -0.4
+  rotation 0 1 0 1.5708
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.106
+      }
+    }
+  ]
+  name "solid(18)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_19 Solid {
+  translation -0.6 0.025 -0.45
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.1
+      }
+    }
+  ]
+  name "solid(19)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_20 Solid {
+  translation -0.5 0.025 -0.75
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.1
+      }
+    }
+  ]
+  name "solid(20)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_21 Solid {
+  translation -0.6 0.025 -0.7
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.2
+      }
+    }
+  ]
+  name "solid(21)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_22 Solid {
+  translation -0.7 0.025 -0.7
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.2
+      }
+    }
+  ]
+  name "solid(22)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_23 Solid {
+  translation -0.750002 0.025 -0.5
+  rotation 0 1 0 1.5708
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.1
+      }
+    }
+  ]
+  name "solid(23)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_24 Solid {
+  translation 0.247 0.025 0.6
+  rotation 0 1 0 1.5707996938995747
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 1.106
+      }
+    }
+  ]
+  name "solid(24)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_25 Solid {
+  translation -0.3 0.025 0.35
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.5
+      }
+    }
+  ]
+  name "solid(25)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_26 Solid {
+  translation -0.397 0.025 0.1
+  rotation 0 1 0 1.5708
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.206
+      }
+    }
+  ]
+  name "solid(26)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_27 Solid {
+  translation -0.6 0.025 0.05
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.1
+      }
+    }
+  ]
+  name "solid(27)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_28 Solid {
+  translation -0.35 0.025 -7.3464e-07
+  rotation 0 1 0 1.5708
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.512
+      }
+    }
+  ]
+  name "solid(28)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_29 Solid {
+  translation -0.447 0.025 -0.1
+  rotation 0 1 0 1.5708
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.306
+      }
+    }
+  ]
+  name "solid(29)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_30 Solid {
+  translation -0.3 0.025 -0.35
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.5
+      }
+    }
+  ]
+  name "solid(30)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_31 Solid {
+  translation 0.2 0.025 -0.6
+  rotation 0 1 0 1.5707996938995747
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 1.012
+      }
+    }
+  ]
+  name "solid(31)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_32 Solid {
+  translation 0.197 0.025 0.5
+  rotation 0 1 0 1.5707996938995747
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.806
+      }
+    }
+  ]
+  name "solid(32)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_33 Solid {
+  translation 0.303 0.025 0.4
+  rotation 0 1 0 1.5707996938995747
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.806
+      }
+    }
+  ]
+  name "solid(33)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_34 Solid {
+  translation 0.7 0.025 0.5
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.2
+      }
+    }
+  ]
+  name "solid(34)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_35 Solid {
+  translation 0.7 0.025 0.2
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.2
+      }
+    }
+  ]
+  name "solid(35)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_36 Solid {
+  translation 0.55 0.025 0.0999945
+  rotation 0 1 0 1.5708
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.1
+      }
+    }
+  ]
+  name "solid(36)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_37 Solid {
+  translation 0.55 0.025 0.199994
+  rotation 0 1 0 1.5708
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.1
+      }
+    }
+  ]
+  name "solid(37)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_38 Solid {
+  translation 0.35 0.025 0.0999947
+  rotation 0 1 0 1.5708
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.1
+      }
+    }
+  ]
+  name "solid(38)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_39 Solid {
+  translation 0.2 0.025 0.15
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.1
+      }
+    }
+  ]
+  name "solid(39)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_40 Solid {
+  translation 0.4 0.025 0.25
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.1
+      }
+    }
+  ]
+  name "solid(40)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_41 Solid {
+  translation 0.197 0.025 0.3
+  rotation 0 1 0 1.5707996938995747
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.806
+      }
+    }
+  ]
+  name "solid(41)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_42 Solid {
+  translation -0.2 0.025 0.2
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.6
+      }
+    }
+  ]
+  name "solid(42)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_43 Solid {
+  translation 0.0999995 0.025 0.199998
+  rotation 0 1 0 1.5708
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.4
+      }
+    }
+  ]
+  name "solid(43)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_44 Solid {
+  translation -0.1 0.025 0
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.2
+      }
+    }
+  ]
+  name "solid(44)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_45 Solid {
+  translation 0.1 0.025 0
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.2
+      }
+    }
+  ]
+  name "solid(45)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_46 Solid {
+  translation -6.74634e-14 0.025 0.0999987
+  rotation 0 1 0 1.5708
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.212
+      }
+    }
+  ]
+  name "solid(46)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_47 Solid {
+  translation -0.05 0.025 -0.1
+  rotation 0 1 0 1.5708
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.112
+      }
+    }
+  ]
+  name "solid(47)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_48 Solid {
+  translation 0 0.025 -0.15
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.1
+      }
+    }
+  ]
+  name "solid(48)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_49 Solid {
+  translation -0.2 0.025 -0.25
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.1
+      }
+    }
+  ]
+  name "solid(49)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_50 Solid {
+  translation -0.153 0.025 -0.3
+  rotation 0 1 0 1.5708
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.106
+      }
+    }
+  ]
+  name "solid(50)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_51 Solid {
+  translation 0.053 0.025 -0.2
+  rotation 0 1 0 1.5708
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.306
+      }
+    }
+  ]
+  name "solid(51)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_52 Solid {
+  translation 0.1 0.025 -0.25
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.1
+      }
+    }
+  ]
+  name "solid(52)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_53 Solid {
+  translation 0.053 0.025 -0.3
+  rotation 0 1 0 1.5708
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.106
+      }
+    }
+  ]
+  name "solid(53)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_54 Solid {
+  translation -0.100002 0.025 -0.4
+  rotation 0 1 0 1.5708
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.2
+      }
+    }
+  ]
+  name "solid(54)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_55 Solid {
+  translation -0.153 0.025 -0.5
+  rotation 0 1 0 1.5708
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.306
+      }
+    }
+  ]
+  name "solid(55)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_56 Solid {
+  translation 0.1 0.025 -0.55
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.1
+      }
+    }
+  ]
+  name "solid(56)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_57 Solid {
+  translation 0.153 0.025 -0.4
+  rotation 0 1 0 1.5708
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.106
+      }
+    }
+  ]
+  name "solid(57)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_58 Solid {
+  translation 0.2 0.025 -0.3
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.4
+      }
+    }
+  ]
+  name "solid(58)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_59 Solid {
+  translation 0.397 0.025 -0.5
+  rotation 0 1 0 1.5708
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.406
+      }
+    }
+  ]
+  name "solid(59)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_60 Solid {
+  translation 0.347 0.025 -0.3
+  rotation 0 1 0 1.5708
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.306
+      }
+    }
+  ]
+  name "solid(60)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_61 Solid {
+  translation 0.347 0.025 -0.1
+  rotation 0 1 0 1.5708
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.306
+      }
+    }
+  ]
+  name "solid(61)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_62 Solid {
+  translation 0.453 0.025 -0.4
+  rotation 0 1 0 1.5708
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.306
+      }
+    }
+  ]
+  name "solid(62)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_63 Solid {
+  translation 0.453 0.025 -0.2
+  rotation 0 1 0 1.5708
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.306
+      }
+    }
+  ]
+  name "solid(63)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_64 Solid {
+  translation 0.503 0.025 -1.8366e-07
+  rotation 0 1 0 1.5708
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.606
+      }
+    }
+  ]
+  name "solid(64)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_65 Solid {
+  translation 0.6 0.025 -0.2
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.4
+      }
+    }
+  ]
+  name "solid(65)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_66 Solid {
+  translation 0.7 0.025 -0.3
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 0.6
+      }
+    }
+  ]
+  name "solid(66)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_67 Solid {
+  translation -0.8 0.025 -1.73472e-18
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 1.6
+      }
+    }
+  ]
+  name "solid(67)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_68 Solid {
+  translation 0.8 0.025 -1.73472e-18
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 1.6
+      }
+    }
+  ]
+  name "solid(68)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_69 Solid {
+  translation 0 0.025 -0.8
+  rotation 0 1 0 1.5708
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 1.612
+      }
+    }
+  ]
+  name "solid(69)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_70 Solid {
+  translation 5.87705e-06 0.025 0.8
+  rotation 0 1 0 1.5708
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.012 0.05 1.612
+      }
+    }
+  ]
+  name "solid(70)"
+  boundingObject USE WALL_SHAPE
+}
